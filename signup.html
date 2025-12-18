@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regjistrohu</title>
+
+<body>
+<div class="container">
+    <h2>Signup</h2>
+
+    <label for="role">Unë jam:</label>
+    <select id="role" name="role">
+        <option value="">-- Zgjedh rolin --</option>
+        <option value="student">Student</option>
+        <option value="teacher">Profesor</option>
+    </select>
+
+    <form id="signupForm" action="signup.php" method="post">
+        <div id="studentiForm" class="form-section">
+            <label for="studentEmri">Emri:</label>
+            <input type="text" id="studentEmri" name="studentEmri">
+
+            <label for="studentMbiemri">Mbiemri:</label>
+            <input type="text" id="studentMbiemri" name="studentMbiemri">
+
+            <label for="studentEmail">Email:</label>
+            <input type="email" id="studentEmail" name="studentEmail">
+
+            <label for="studentVitistudimeve">Viti i Studimeve:</label>
+            <input type="text" id="studentVitistudimeve" name="studentVitistudimeve">
+
+            <label for="studentPassword">Password:</label>
+            <input type="password" id="studentPassword" name="studentPassword">
+        </div>
+
+        <div id="profesoriForm" class="form-section">
+            <label for="profesoriEmri">Emri:</label>
+            <input type="text" id="profesoriEmri" name="profesoriEmri">
+
+              <label for="profesoriMbiemri">Mbiemri:</label>
+            <input type="text" id="profesoriMbiemri" name="profesoriMbiemri">
+
+            <label for="profesoriEmail">Email:</label>
+            <input type="email" id="profesoriEmail" name="profesoriEmail">
+
+            <label for="department">Departmenti:</label>
+            <input type="text" id="department" name="department">
+
+            <label for="teacherPassword">Password:</label>
+            <input type="password" id="teacherPassword" name="teacherPassword">
+        </div>
+
+        <div class="error" id="errorMsg"></div>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
